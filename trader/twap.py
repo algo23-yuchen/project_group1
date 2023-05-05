@@ -84,7 +84,7 @@ class Twap():
         trade_info = {'direction':'buy', 'avg_price':avg_price, 'volume':position, 'trade_detail':price_vol}
         return trade_info
 
-    def sell(self, timestamp, position):
+    def sell(self, timestamp, position):#TOMODIFY
         #卖端看买方订单簿        
         price_vol = self.orderbook.get_price_volume(datetime=timestamp, 
                                     direction='buy', trade_volume=position)
